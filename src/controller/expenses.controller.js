@@ -13,7 +13,8 @@ const create = (req, res) => {
     spentAt === undefined ||
     title === undefined ||
     amount === undefined ||
-    category === undefined
+    category === undefined ||
+    note === undefined
   ) {
     res.sendStatus(400);
 

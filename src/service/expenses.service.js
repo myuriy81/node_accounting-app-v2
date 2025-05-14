@@ -1,7 +1,7 @@
 let expenses = [];
 
 function getAll({ userId, categories, from, to }) {
-  let exp = expenses;
+  let exp = [...expenses];
 
   if (userId) {
     exp = exp.filter((item) => item.userId === +userId);
